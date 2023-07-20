@@ -136,7 +136,7 @@ const addOrEditDialogClose = () => {
 <style scoped >
 .box-card {
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 120px);
   margin: 10px;
 }
 .box-card-form {
@@ -150,6 +150,6 @@ const addOrEditDialogClose = () => {
   margin-top: 10px;
 }
 .box-card-table :deep(.el-card__body) {
-  height: calc(100vh - 120px);
+  height: calc(100vh - 250px);
 }
 </style>
