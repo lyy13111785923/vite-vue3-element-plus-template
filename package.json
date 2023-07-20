@@ -1,42 +1,44 @@
 {
-  "name": "demo",
-  "version": "0.1.0",
-  "private": true,
+  "name": "ruoyi",
+  "version": "3.8.6",
+  "description": "若依管理系统",
+  "author": "若依",
+  "license": "MIT",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "dev": "vite",
+    "build:prod": "vite build",
+    "build:stage": "vite build --mode staging",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/y_project/RuoYi-Vue.git"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^3.0.0"
+    "@element-plus/icons-vue": "2.0.10",
+    "@vueup/vue-quill": "1.1.0",
+    "@vueuse/core": "9.5.0",
+    "axios": "0.27.2",
+    "echarts": "5.4.0",
+    "element-plus": "2.2.27",
+    "file-saver": "2.0.5",
+    "fuse.js": "6.6.2",
+    "js-cookie": "3.0.1",
+    "jsencrypt": "3.3.1",
+    "nprogress": "0.2.0",
+    "pinia": "2.0.22",
+    "vue": "3.2.45",
+    "vue-cropper": "1.0.3",
+    "vue-router": "4.1.4"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.15",
-    "@vue/cli-plugin-eslint": "~4.5.15",
-    "@vue/cli-service": "~4.5.15",
-    "@vue/compiler-sfc": "^3.0.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+    "@vitejs/plugin-vue": "3.1.0",
+    "@vue/compiler-sfc": "3.2.45",
+    "sass": "1.56.1",
+    "unplugin-auto-import": "0.11.4",
+    "vite": "3.2.3",
+    "vite-plugin-compression": "0.5.1",
+    "vite-plugin-svg-icons": "2.0.1",
+    "vite-plugin-vue-setup-extend": "0.4.0"
+  }
 }
