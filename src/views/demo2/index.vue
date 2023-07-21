@@ -4,6 +4,7 @@
       <button @click="changeTheme($event)">黑夜</button>
       <button @click="changeMode($event)">javascript</button>
       <button @click="submitBtn($event)">保存代码</button>
+      <button @click="workingBtn($event)">运行</button>
     </div>
     <div style="width:50%;height:calc(100vh - 110px);display:inline-block;vertical-align:top;">
       <!-- @change="log('change', $event)"   @focus="log('change', $event)"   @ready="log('ready', $event)" -->
@@ -11,7 +12,9 @@
     </div>
     <div style="background:#ccc;color:#000;width:50%;height:calc(100vh - 110px);display:inline-block;">
       <p style="text-align:center;font-size:22px;">显示代码</p>
-      <pre style="font-size:18px;">{{ subCode }}</pre>
+      <pre style="font-size:18px;height:200px;overflow-y:auto;">{{ subCode }}</pre>
+      <p style="text-align:center;font-size:22px;">显示结果</p>
+      <pre style="font-size:18px;" id="subRes">{{ subresCode }}</pre>
     </div>
   </div>
 </template>
@@ -32,8 +35,13 @@ export default {
   },
   setup() {
     // 数据
-    const code = ref(``);
+    const code = ref(`function (){
+      
+    //return 你要输出的结果
+    return {a:1,b:[1,2],c:3}
+}`);
     const subCode = ref(``);
+    const subresCode = ref(``);
     let selectValue = "javascript";
     let dateTime = "黑夜";
     const options = reactive({
@@ -55,9 +63,61 @@ export default {
 
     // 代码提交
     function submitBtn() {
-      // console.log(code.value);
-      subCode.value = code.value;
-      console.log(subCode.value);
+      subCode.value = code.value
+    }
+
+
+    // 运行代码
+    function workingBtn() {
+      let arr = `
+        var outputFun = ${code.value}
+        var output=outputFun()
+        var res=''
+        if(output instanceof Array){
+           // res='['+output+']'
+            res+='['
+            for(var i=0;i<output.length;i++){
+              if(output[i] instanceof Object){
+                res+='<br/>'+'{'+'<br/>'
+                for(var j in output[i]){
+                  res+=j+':'+output[i][j]+'<br/>'
+                }
+                res+='}'+'<br/>'
+              }else{
+                res+=output[i]
+              }
+              if(i!=output.length-1) res+=','
+            }
+            res+=']'
+        }else if(output instanceof Object){
+            res+='{'+'<br/>'
+            for(var i in output){
+              if(output[i] instanceof Array){
+                res+=i
+                res+=':['
+                for(var z=0;z<output[i].length;z++){
+                  res+=output[i][z]
+                  if(z!=output[i].length-1) res+=','
+                }
+                res+='],'+'<br/>'
+              }else{
+                res+=i+':'+output[i]+',<br/>'
+              }
+            }
+            res+='}'
+        }else if(output instanceof Number){
+            res=output
+        }else{
+            res=output
+        }
+        document.getElementById('subRes').innerHTML = res
+      `
+      let scriptElement = document.createElement('script');
+      scriptElement.textContent = arr;
+      document.head.appendChild(scriptElement);
+      setTimeout(() => {
+        document.head.removeChild(scriptElement);
+      }, 5000);
     }
 
     // 改变主题
@@ -92,12 +152,14 @@ export default {
     return {
       code,
       subCode,
+      subresCode,
       selectValue,
       dateTime,
       ...toRefs(options),
       log: console.log,
       useEditedCode,
       submitBtn,
+      workingBtn,
       changeTheme,
       changeMode,
     };

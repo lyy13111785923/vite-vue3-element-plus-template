@@ -4,7 +4,7 @@ let menuDatas={
   "data": [
       {
           "name": "Demo",
-          "path": "/demo1",
+          "path": "/demo",
           "hidden": false,
           "redirect": "noRedirect",
           "component": "Layout",
