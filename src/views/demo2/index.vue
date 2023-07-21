@@ -38,7 +38,7 @@ export default {
     const code = ref(`function (){
       
     //return 你要输出的结果
-    return {a:1,b:[1,2],c:3}
+    return 
 }`);
     const subCode = ref(``);
     const subresCode = ref(``);
