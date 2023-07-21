@@ -17,8 +17,8 @@ let menuDatas={
           },
           "children": [
               {
-                  "name": "User",
-                  "path": "user",
+                  "name": "demo1",
+                  "path": "demo1",
                   "hidden": false,
                   "component": "demo1/index",
                   "meta": {
@@ -28,6 +28,18 @@ let menuDatas={
                       "link": null
                   }
               },
+              {
+                "name": "demo2",
+                "path": "demo2",
+                "hidden": false,
+                "component": "demo2/index",
+                "meta": {
+                    "title": "测试demo2",
+                    "icon": "user",
+                    "noCache": false,
+                    "link": null
+                }
+            },
           ]
       },
   ]
