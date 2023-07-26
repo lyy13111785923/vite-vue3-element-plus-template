@@ -40,6 +40,18 @@ let menuDatas={
                     "link": null
                 }
             },
+            {
+              "name": "demo3",
+              "path": "demo3",
+              "hidden": false,
+              "component": "demo3/index",
+              "meta": {
+                  "title": "测试demo3",
+                  "icon": "user",
+                  "noCache": false,
+                  "link": null
+              }
+          },
           ]
       },
   ]

@@ -13,3 +13,18 @@ export function setToken(token) {
 export function removeToken() {
   return Cookies.remove(TokenKey)
 }
+
+
+// 水印
+const Watermark='WatermarkFlag'
+export function getWatermark() {
+  return Cookies.get(Watermark)
+}
+
+export function setWatermark(token) {
+  return Cookies.set(Watermark, token)
+}
+
+export function removeWatermark() {
+  return Cookies.remove(Watermark)
+}
