@@ -51,7 +51,19 @@ let menuDatas={
                   "noCache": false,
                   "link": null
               }
-          },
+            },
+            {
+              "name": "demo4",
+              "path": "demo4",
+              "hidden": false,
+              "component": "demo4/index",
+              "meta": {
+                  "title": "测试demo4",
+                  "icon": "user",
+                  "noCache": false,
+                  "link": null
+              }
+            },
           ]
       },
   ]
