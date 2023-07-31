@@ -1,5 +1,9 @@
 export default {
   /**
+   * 权限
+   */
+  permissions: 'pxm',
+  /**
    * 网页标题
    */
   title: import.meta.env.VITE_APP_TITLE,
