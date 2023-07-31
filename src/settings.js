@@ -2,7 +2,7 @@ export default {
   /**
    * 权限
    */
-  permissions: 'pxm',
+  permissions: 'lyy',
   /**
    * 网页标题
    */
