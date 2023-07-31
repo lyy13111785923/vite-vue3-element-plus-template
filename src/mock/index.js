@@ -22,7 +22,7 @@ let menuDatas={
                   "hidden": false,
                   "component": "demo1/index",
                   "meta": {
-                      "title": "测试demo1",
+                      "title": "模版管理table",
                       "icon": "user",
                       "noCache": false,
                       "link": null
@@ -34,7 +34,7 @@ let menuDatas={
                 "hidden": false,
                 "component": "demo2/index",
                 "meta": {
-                    "title": "测试demo2",
+                    "title": "代码执行",
                     "icon": "user",
                     "noCache": false,
                     "link": null
@@ -46,7 +46,7 @@ let menuDatas={
               "hidden": false,
               "component": "demo3/index",
               "meta": {
-                  "title": "测试demo3",
+                  "title": "水印",
                   "icon": "user",
                   "noCache": false,
                   "link": null
@@ -58,7 +58,7 @@ let menuDatas={
               "hidden": false,
               "component": "demo4/index",
               "meta": {
-                  "title": "测试demo4",
+                  "title": "按钮切换",
                   "icon": "user",
                   "noCache": false,
                   "link": null
@@ -70,7 +70,7 @@ let menuDatas={
               "hidden": false,
               "component": "demo5/index",
               "meta": {
-                  "title": "测试demo5",
+                  "title": "抽奖",
                   "icon": "user",
                   "noCache": false,
                   "link": null
@@ -82,7 +82,7 @@ let menuDatas={
               "hidden": false,
               "component": "demo6/index",
               "meta": {
-                  "title": "测试demo6",
+                  "title": "卡片时钟",
                   "icon": "user",
                   "noCache": false,
                   "link": null
@@ -94,7 +94,7 @@ let menuDatas={
               "hidden": false,
               "component": "demo7/index",
               "meta": {
-                  "title": "测试demo7",
+                  "title": "v3常用方法",
                   "icon": "user",
                   "noCache": false,
                   "link": null
@@ -106,7 +106,19 @@ let menuDatas={
               "hidden": false,
               "component": "demo8/index",
               "meta": {
-                  "title": "测试demo8",
+                  "title": "tag右键菜单",
+                  "icon": "user",
+                  "noCache": false,
+                  "link": null
+              }
+            },
+            {
+              "name": "demo9",
+              "path": "demo9",
+              "hidden": false,
+              "component": "demo9/index",
+              "meta": {
+                  "title": "敲木鱼",
                   "icon": "user",
                   "noCache": false,
                   "link": null
