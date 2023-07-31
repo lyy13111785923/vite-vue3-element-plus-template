@@ -1,5 +1,5 @@
 <template>
-  <div class="demo5" style="padding:20px;">
+  <div class="demo6" style="padding:20px;">
     <FlipCalendar></FlipCalendar>
   </div>
 </template>
