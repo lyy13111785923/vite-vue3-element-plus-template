@@ -130,7 +130,19 @@ let menuDatas={
               "hidden": false,
               "component": "demo10/index",
               "meta": {
-                  "title": "demo10",
+                  "title": "高亮显示",
+                  "icon": "user",
+                  "noCache": false,
+                  "link": null
+              }
+            },
+            {
+              "name": "demo11",
+              "path": "demo11",
+              "hidden": false,
+              "component": "demo11/index",
+              "meta": {
+                  "title": "刮刮乐",
                   "icon": "user",
                   "noCache": false,
                   "link": null
