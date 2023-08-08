@@ -184,6 +184,18 @@ let menuDatas={
                   "link": null
               }
             },
+            {
+              "name": "demo15",
+              "path": "demo15",
+              "hidden": false,
+              "component": "demo15/index",
+              "meta": {
+                  "title": "多叉树根据id返回name",
+                  "icon": "user",
+                  "noCache": false,
+                  "link": null
+              }
+            },
           ]
       },
   ]
