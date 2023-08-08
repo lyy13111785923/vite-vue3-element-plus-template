@@ -148,6 +148,18 @@ let menuDatas={
                   "link": null
               }
             },
+            {
+              "name": "demo12",
+              "path": "demo12",
+              "hidden": false,
+              "component": "demo12/index",
+              "meta": {
+                  "title": "demo12",
+                  "icon": "user",
+                  "noCache": false,
+                  "link": null
+              }
+            },
           ]
       },
   ]
