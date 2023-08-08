@@ -172,6 +172,18 @@ let menuDatas={
                   "link": null
               }
             },
+            {
+              "name": "demo14",
+              "path": "demo14",
+              "hidden": false,
+              "component": "demo14/index",
+              "meta": {
+                  "title": "深度优先查找(DFS)和广度优先查找(BFS)",
+                  "icon": "user",
+                  "noCache": false,
+                  "link": null
+              }
+            },
           ]
       },
   ]
