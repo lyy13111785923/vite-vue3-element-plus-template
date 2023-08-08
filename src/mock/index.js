@@ -154,7 +154,7 @@ let menuDatas={
               "hidden": false,
               "component": "demo12/index",
               "meta": {
-                  "title": "demo12",
+                  "title": "要求实现json2dom方法,返回结果是一个真实的DOM",
                   "icon": "user",
                   "noCache": false,
                   "link": null
