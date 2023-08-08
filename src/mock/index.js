@@ -154,7 +154,19 @@ let menuDatas={
               "hidden": false,
               "component": "demo12/index",
               "meta": {
-                  "title": "要求实现json2dom方法,返回结果是一个真实的DOM",
+                  "title": "返回真实的DOM",
+                  "icon": "user",
+                  "noCache": false,
+                  "link": null
+              }
+            },
+            {
+              "name": "demo13",
+              "path": "demo13",
+              "hidden": false,
+              "component": "demo13/index",
+              "meta": {
+                  "title": "返回虚拟DOM树对象",
                   "icon": "user",
                   "noCache": false,
                   "link": null
