@@ -202,7 +202,31 @@ let menuDatas={
               "hidden": false,
               "component": "demo16/index",
               "meta": {
-                  "title": "demo16",
+                  "title": "IndexedDB操作",
+                  "icon": "user",
+                  "noCache": false,
+                  "link": null
+              }
+            },
+            {
+              "name": "demo17",
+              "path": "demo17",
+              "hidden": false,
+              "component": "demo17/index",
+              "meta": {
+                  "title": "LRU算法",
+                  "icon": "user",
+                  "noCache": false,
+                  "link": null
+              }
+            },
+            {
+              "name": "demo18",
+              "path": "demo18",
+              "hidden": false,
+              "component": "demo18/index",
+              "meta": {
+                  "title": "demo18",
                   "icon": "user",
                   "noCache": false,
                   "link": null
