@@ -226,7 +226,7 @@ let menuDatas={
               "hidden": false,
               "component": "demo18/index",
               "meta": {
-                  "title": "demo18",
+                  "title": "数字消消乐",
                   "icon": "user",
                   "noCache": false,
                   "link": null
