@@ -232,6 +232,18 @@ let menuDatas={
                   "link": null
               }
             },
+            {
+              "name": "demo19",
+              "path": "demo19",
+              "hidden": false,
+              "component": "demo19/index",
+              "meta": {
+                  "title": "demo19",
+                  "icon": "user",
+                  "noCache": false,
+                  "link": null
+              }
+            },
           ]
       },
   ]

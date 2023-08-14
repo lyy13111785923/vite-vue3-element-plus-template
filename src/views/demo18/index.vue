@@ -9,17 +9,17 @@
 </template>
 
 <script setup>
-import { nextTick, reactive, ref } from 'vue';
+import { nextTick, reactive, ref } from "vue"
 let count = ref(0)
 let boxArr = reactive([])
 let boxShow = reactive([])
 // 随机生成1-10的数组
-function generateRandomArray(length, min, max) {
+function generateRandomArray (length, min, max) {
   var array = [];
   while (array.length < length) {
-    var randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+    var randomNum = Math.floor(Math.random() * (max - min + 1)) + min
     if (array.indexOf(randomNum) === -1) {
-      array.push(randomNum);
+      array.push(randomNum)
     }
   }
   return array;
