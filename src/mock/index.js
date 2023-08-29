@@ -238,7 +238,19 @@ let menuDatas={
               "hidden": false,
               "component": "demo19/index",
               "meta": {
-                  "title": "demo19",
+                  "title": "鼠标区域勾选方块",
+                  "icon": "user",
+                  "noCache": false,
+                  "link": null
+              }
+            },
+            {
+              "name": "demo20",
+              "path": "demo20",
+              "hidden": false,
+              "component": "demo20/index",
+              "meta": {
+                  "title": "基于scale的适配方案",
                   "icon": "user",
                   "noCache": false,
                   "link": null

@@ -12,6 +12,9 @@ import store from './store'
 import router from './router'
 import directive from './directive' // directive
 
+// 移动端适配
+import "amfe-flexible/index.js";
+
 // 注册指令
 import plugins from './plugins' // plugins
 import { download } from '@/utils/request'
