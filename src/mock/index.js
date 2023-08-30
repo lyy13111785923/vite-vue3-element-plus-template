@@ -256,6 +256,18 @@ let menuDatas={
                   "link": null
               }
             },
+            {
+              "name": "demo21",
+              "path": "demo21",
+              "hidden": false,
+              "component": "demo21/index",
+              "meta": {
+                  "title": "图片渐隐展示效果",
+                  "icon": "user",
+                  "noCache": false,
+                  "link": null
+              }
+            },
           ]
       },
   ]
