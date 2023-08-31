@@ -268,6 +268,18 @@ let menuDatas={
                   "link": null
               }
             },
+            {
+              "name": "demo22",
+              "path": "demo22",
+              "hidden": false,
+              "component": "demo22/index",
+              "meta": {
+                  "title": "打字机效果",
+                  "icon": "user",
+                  "noCache": false,
+                  "link": null
+              }
+            },
           ]
       },
   ]
